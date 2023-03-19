@@ -1,0 +1,34 @@
+@import "./base.scss";
+
+.HomeView-container {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.recommend-music_list {
+	display: flex;
+	gap: 8px;
+
+	.recommend-music_list_item {
+		min-width: 150px;
+		min-height: 150px;
+
+		.recommend-music_list_item-title {
+			color: $primary-color;
+		}
+
+		.recommend-music_card {
+			width: 100%;
+			border-radius: 6px;
+
+			background-color: gray;
+		}
+	}
+}
+
+.recommend-music_title {
+	color: $white-color;
+	font-size: 24px;
+	font-weight: 800;
+}

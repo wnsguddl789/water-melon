@@ -1,0 +1,10 @@
+.header-container {
+	display: flex;
+	justify-content: space-between;
+
+	.button-section {
+		ul {
+			display: flex;
+		}
+	}
+}

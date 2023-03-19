@@ -1,0 +1,18 @@
+$black-color: #020202;
+$white-color: #f0f0f0;
+$primary-color: #028a0f;
+
+body {
+	background-color: $black-color;
+
+	color: $white-color;
+}
+
+header {
+	padding: 10px 10px;
+	width: 100vw;
+}
+
+main {
+	padding: 10px 10px;
+}
