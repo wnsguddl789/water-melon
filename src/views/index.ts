@@ -1,3 +1,2 @@
-import HomeView from './HomeView';
-
-export { HomeView };
+export { default as HomeView } from "./HomeView";
+export { default as TrendView } from "./TrendView";
