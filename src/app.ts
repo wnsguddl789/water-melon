@@ -1,18 +1,26 @@
-import Component from './core/Component';
+import Component from "./core/Component";
+
+import "./scss/reset.scss";
+import { Header, BottomNavigation } from "./components";
 
 interface State {}
 
 export default class AppComponent extends Component<State> {
-  constructor(target: HTMLDivElement) {
-    const state: State = {};
-    super(target, state);
-  }
+	constructor(target: HTMLDivElement) {
+		const state: State = {};
+		super(target, state);
+	}
 
-  template() {
-    return /* html */ `
-      <header></header>
+	componentDidMount() {
+		new Header(document.querySelector("#header") as HTMLElement);
+		new BottomNavigation(document.querySelector("#bottom-navigation") as HTMLElement);
+	}
+
+	template() {
+		return /* html */ `
+      <header id="header"></header>
       <main></main>
-      <nav id="bottom-nav_bar"></nav>
+      <nav id="bottom-navigation"></nav>
     `;
-  }
+	}
 }
